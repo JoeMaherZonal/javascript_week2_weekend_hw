@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokémon Api Interface</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="chart.js"></script>
+  <script src='app.js'></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+  <div class='row'>
+    <div class='col-2'></div> <!-- gutter spacing -->
+
+    <div class='col-8'>
+      
+      <div class="row" id='logo-row'>
+        <div class='col-12'>
+          <img id='pokemon-logo' src='pokemon_logo.png'>
+        </div>
+      </div>
+
+      <div class='row' id='search-row'>
+        <div class='col-12'>
+          <input type="text" id='search-crit' value="Gotta Catch 'em All!">
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+
+      <div class='row' id='main-content'><!-- main content row -->
+
+        <div class='col-6' id='pokedex-data'>
+          <div class='row'>
+            <img id='pokemon-image'>
+          </div>
+        </div>
+
+        <div class='col-6' id='pokemon-stats'>
+
+          <div class='row'>
+            <div class='col-6'>
+              <div class='row'>
+                <div class='col-12' id='height-title'></div>
+              </div>
+              <div class='row'>
+                <div class='col-12' id='height-data'></div>
+              </div>
+            </div>
+            <div class='col-6'>
+              <div class='row'>
+                <div class='col-12' id='weight-title'></div>
+              </div>
+              <div class='row'>
+                <div class='col-12' id='weight-data'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='row' id='types-row'>
+            <ul id='types-list'></ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class='row'>
+        <div class='col-12' id='training-data'>
+          <div id="chart-container" style="height: 400px"></div>
+        </div>
+      </div><!-- seconadary content -->
+
+    </div><!-- end of content -->
+
+    <div class='col-2'></div> <!-- gutter spacing -->
+
+  </div><!-- EOF -->
+
+
+
+
+</body>
+</html>
